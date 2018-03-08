@@ -4,7 +4,7 @@
       <HeaderTop title="我的"/>
     </header>
     <section class="profile-number">
-      <a href="javascript:" class="profile-link">
+      <router-link to="/login" class="profile-link">
         <div class="profile_image">
           <i class="iconfont icon-person"></i>
         </div>
@@ -20,7 +20,7 @@
         <span class="arrow">
               <i class="iconfont icon-jiantou1"></i>
             </span>
-      </a>
+      </router-link>
     </section>
     <section class="profile_info_data border-1px">
       <ul class="info_data_list">
@@ -95,6 +95,7 @@
 
 <script>
   import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+
   export default {
     components: {
       HeaderTop

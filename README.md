@@ -19,3 +19,9 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+###注意
+this ☞ 组件对象
+$router ☞ 路由器对象
+$route ☞ 当前路由器
+
