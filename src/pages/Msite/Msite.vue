@@ -1,6 +1,6 @@
 <template>
   <div class="msite">
-    <HeaderTop title="昌平区北七家宏福科技园(337省道北)">
+    <HeaderTop :title="position.name">
       <span class="header_search" slot="search">
       <i class="iconfont icon-sousuo"></i>
       </span>
@@ -133,12 +133,17 @@
   import 'swiper/dist/css/swiper.min.css'
   import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
   import shopList from '../../components/shopList/shopList.vue'
+  import {mapState} from 'vuex'
 
   export default {
-    mounted() {
+    computed: {
+      ...mapState(['position'])
+    },
+    mounted () {
+      /* eslint-disable no-new */
       new Swiper('.swiper-container', {
         pagination: {
-          el: '.swiper-pagination',
+          el: '.swiper-pagination'
         },
         loop: true
       })

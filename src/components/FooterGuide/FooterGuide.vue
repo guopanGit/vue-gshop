@@ -30,10 +30,10 @@
 <script>
   export default {
     methods: {
-      goto(path) {
+      goto (path) {
         this.$router.replace(path)
       },
-      isAccording(path){
+      isAccording (path) {
         return this.$route.path === path
       }
     }
@@ -42,7 +42,7 @@
 
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../../common/stylus/mixins.styl"
-  .footer_guide  //footer
+  .footer_guide //footer
     top-border-1px(#e4e4e4)
     position fixed
     z-index 100

@@ -54,13 +54,13 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
         LoginWay: true
       }
     },
     methods: {
-      setLoginWay(LoginWay) {
+      setLoginWay (LoginWay) {
         this.LoginWay = LoginWay
       }
     }
