@@ -11,7 +11,8 @@
   export default {
     mounted () {
       // 异步获取地址
-      this.$store.dispatch('Position')
+      this.$store.dispatch('position')
+      this.$store.dispatch('getUserInfo')
     },
     components: {
       FooterGuide
